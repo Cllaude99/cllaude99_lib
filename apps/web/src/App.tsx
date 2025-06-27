@@ -1,4 +1,4 @@
-import { Counter, Header } from '@repo/ui';
+import { Counter, Header } from '@cllaude99_lib/ui';
 import typescriptLogo from '/typescript.svg';
 
 const App = () => (

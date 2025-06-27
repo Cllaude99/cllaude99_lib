@@ -20,7 +20,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/ui':
+      '@cllaude99_lib/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       react:
@@ -30,10 +30,10 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@repo/eslint-config':
+      '@cllaude99_lib/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@repo/typescript-config':
+      '@cllaude99_lib/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/react':
@@ -78,10 +78,10 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@repo/eslint-config':
+      '@cllaude99_lib/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@repo/typescript-config':
+      '@cllaude99_lib/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/react':
