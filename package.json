@@ -1,4 +1,5 @@
 {
+  "name": "cllaude99_lib",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -8,9 +9,10 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "prettier": "^3.5.3",
     "turbo": "^2.5.4"
   },
-  "packageManager": "pnpm@8.15.6",
-  "name": "with-vite-react"
+  "packageManager": "pnpm@8.15.6"
 }
