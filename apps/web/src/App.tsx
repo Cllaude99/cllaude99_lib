@@ -12,9 +12,15 @@ const router = createBrowserRouter([
         <div>
           <h2>Primary Buttons</h2>
           <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-            <Button size="small">Small</Button>
-            <Button size="medium">Medium</Button>
-            <Button size="large">Large</Button>
+            <Button variant="primary" size="small">
+              Small
+            </Button>
+            <Button variant="primary" size="medium">
+              Medium
+            </Button>
+            <Button variant="primary" size="large">
+              Large
+            </Button>
           </div>
         </div>
         <div>

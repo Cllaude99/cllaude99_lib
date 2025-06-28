@@ -1,22 +1,20 @@
-/** @jsxImportSource @emotion/react */
 import { ButtonHTMLAttributes } from 'react';
-import { buttonBase, buttonSizes, buttonVariants } from './Button.styles';
+import Styled, { ButtonProps } from './Button.styles';
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: keyof typeof buttonVariants;
-  size?: keyof typeof buttonSizes;
-}
+type Props = ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps;
 
-export const Button = ({
-  variant = 'primary',
-  size = 'medium',
-  children,
-  ...props
-}: ButtonProps) => {
+const Button = ({ children, variant = 'primary', size = 'medium', icon, ...rest }: Props) => {
+  const hasChildren = !!children;
+
   return (
-    <button css={[buttonBase, buttonVariants[variant], buttonSizes[size]]} {...props}>
+    <Styled.Container variant={variant} size={size} {...rest}>
+      {icon && (
+        <Styled.Icon size={size} hasChildren={hasChildren}>
+          {icon}
+        </Styled.Icon>
+      )}
       {children}
-    </button>
+    </Styled.Container>
   );
 };
 
