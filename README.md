@@ -29,27 +29,19 @@ cllaude99_lib는 모던하고 확장 가능한 React 컴포넌트 라이브러�
 
 ### 패키지 구조
 
-```mermaid
-graph TD
-    A[cllaude99_lib] --> B[apps]
-    A --> C[packages]
-    A --> D[config files]
-
-    B --> B1[web]
-
-    C --> C1[ui]
-    C --> C2[eslint-config]
-    C --> C3[typescript-config]
-
-    D --> D1[.eslintrc.js]
-    D --> D2[.prettierrc]
-    D --> D3[turbo.json]
-    D --> D4[pnpm-workspace.yaml]
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bbf,stroke:#333,stroke-width:2px
-    style D fill:#ffd,stroke:#333,stroke-width:2px
+```
+cllaude99_lib
+├── apps
+│   └── web                 # 컴포넌트 라이브러리 데모 및 문서화 웹사이트
+├── packages
+│   ├── ui                  # 핵심 UI 컴포넌트 라이브러리
+│   ├── eslint-config      # 공유 ESLint 설정
+│   └── typescript-config  # 공유 TypeScript 설정
+└── config files
+    ├── .eslintrc.js       # ESLint 설정
+    ├── .prettierrc        # Prettier 설정
+    ├── turbo.json         # Turborepo 파이프라인 설정
+    └── pnpm-workspace.yaml # 워크스페이스 설정
 ```
 
 ### 패키지 설명
