@@ -16,8 +16,8 @@
   "devDependencies": {
     "@cllaude99_lib/eslint-config": "workspace:*",
     "@cllaude99_lib/typescript-config": "workspace:*",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "eslint": "^8.57.0",
     "typescript": "5.5.4"
   },

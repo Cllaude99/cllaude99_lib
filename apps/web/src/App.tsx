@@ -1,34 +1,75 @@
-import { Button } from '@cllaude99_lib/ui';
-import './style.css';
+import 'the-new-css-reset/css/reset.css';
+import './index.css';
 
-function App() {
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Button, Cllaude99UIProvider } from '@cllaude99_lib/ui';
+
+const router = createBrowserRouter([
+  {
+    index: true,
+    element: (
+      <div style={{ padding: '20px', display: 'flex', gap: '10px', flexDirection: 'column' }}>
+        <div>
+          <h2>Primary Buttons</h2>
+          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+            <Button size="small">Small</Button>
+            <Button size="medium">Medium</Button>
+            <Button size="large">Large</Button>
+          </div>
+        </div>
+        <div>
+          <h2>Secondary Buttons</h2>
+          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+            <Button variant="secondary" size="small">
+              Small
+            </Button>
+            <Button variant="secondary" size="medium">
+              Medium
+            </Button>
+            <Button variant="secondary" size="large">
+              Large
+            </Button>
+          </div>
+        </div>
+        <div>
+          <h2>Danger Buttons</h2>
+          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+            <Button variant="danger" size="small">
+              Small
+            </Button>
+            <Button variant="danger" size="medium">
+              Medium
+            </Button>
+            <Button variant="danger" size="large">
+              Large
+            </Button>
+          </div>
+        </div>
+        <div>
+          <h2>Ghost Buttons</h2>
+          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+            <Button variant="ghost" size="small">
+              Small
+            </Button>
+            <Button variant="ghost" size="medium">
+              Medium
+            </Button>
+            <Button variant="ghost" size="large">
+              Large
+            </Button>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+]);
+
+const App = () => {
   return (
-    <div className="container">
-      <h1>Button Examples</h1>
-
-      <div style={{ display: 'flex', gap: '16px', marginBottom: '24px' }}>
-        <Button variant="primary">Primary Button</Button>
-        <Button variant="secondary">Secondary Button</Button>
-        <Button variant="outline">Outline Button</Button>
-        <Button variant="ghost">Ghost Button</Button>
-      </div>
-
-      <div style={{ display: 'flex', gap: '16px', marginBottom: '24px' }}>
-        <Button size="x-small">Small Button</Button>
-        <Button>Medium Button</Button>
-        <Button size="bold">Large Button</Button>
-      </div>
-
-      <div style={{ display: 'flex', gap: '16px', marginBottom: '24px' }}>
-        <Button fullWidth>Full Width Button</Button>
-      </div>
-
-      <div style={{ display: 'flex', gap: '16px' }}>
-        <Button disabled>Disabled Button</Button>
-        <Button isLoading>Loading Button</Button>
-      </div>
-    </div>
+    <Cllaude99UIProvider>
+      <RouterProvider router={router} />
+    </Cllaude99UIProvider>
   );
-}
+};
 
 export default App;
