@@ -2,71 +2,13 @@ import 'the-new-css-reset/css/reset.css';
 import './index.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Button, Cllaude99UIProvider } from '@cllaude99_lib/ui';
+import { Cllaude99UIProvider } from '@cllaude99_lib/ui';
+import DefaultComponent from './components/DefaultComponent';
 
 const router = createBrowserRouter([
   {
     index: true,
-    element: (
-      <div style={{ padding: '20px', display: 'flex', gap: '10px', flexDirection: 'column' }}>
-        <div>
-          <h2>Primary Buttons</h2>
-          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-            <Button variant="primary" size="small">
-              Small
-            </Button>
-            <Button variant="primary" size="medium">
-              Medium
-            </Button>
-            <Button variant="primary" size="large">
-              Large
-            </Button>
-          </div>
-        </div>
-        <div>
-          <h2>Secondary Buttons</h2>
-          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-            <Button variant="secondary" size="small">
-              Small
-            </Button>
-            <Button variant="secondary" size="medium">
-              Medium
-            </Button>
-            <Button variant="secondary" size="large">
-              Large
-            </Button>
-          </div>
-        </div>
-        <div>
-          <h2>Danger Buttons</h2>
-          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-            <Button variant="danger" size="small">
-              Small
-            </Button>
-            <Button variant="danger" size="medium">
-              Medium
-            </Button>
-            <Button variant="danger" size="large">
-              Large
-            </Button>
-          </div>
-        </div>
-        <div>
-          <h2>Ghost Buttons</h2>
-          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-            <Button variant="ghost" size="small">
-              Small
-            </Button>
-            <Button variant="ghost" size="medium">
-              Medium
-            </Button>
-            <Button variant="ghost" size="large">
-              Large
-            </Button>
-          </div>
-        </div>
-      </div>
-    ),
+    element: <DefaultComponent />,
   },
 ]);
 
