@@ -1,26 +1,27 @@
 {
   "name": "@cllaude99_lib/ui",
   "version": "0.0.0",
-  "exports": {
-    ".": "./index.ts",
-    "./counter": "./components/counter.ts",
-    "./header": "./components/header.ts",
-    "./setup-counter": "./utils/counter.ts"
-  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts\""
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
     "@cllaude99_lib/eslint-config": "workspace:*",
     "@cllaude99_lib/typescript-config": "workspace:*",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
     "eslint": "^8.57.0",
     "typescript": "5.5.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   }
 }
