@@ -1,0 +1,10 @@
+{
+  "extends": "@cllaude99_lib/typescript-config/vite.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "jsx": "react-jsx",
+    "types": ["node"]
+  },
+  "include": [".storybook/**/*", "stories/**/*"],
+  "exclude": ["node_modules"]
+}
