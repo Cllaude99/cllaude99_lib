@@ -1,5 +1,5 @@
 import '@emotion/react';
-import { palette, typography, breakpoints } from '@cllaude99_lib/ui/src/design-system';
+import { palette, typography, breakpoints } from '@cllaude99_lib/ui';
 
 declare module '@emotion/react' {
   export interface Theme {
