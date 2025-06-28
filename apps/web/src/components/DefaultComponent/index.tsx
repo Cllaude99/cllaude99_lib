@@ -1,9 +1,4 @@
-import { ReactNode } from 'react';
 import * as S from './DefaultComponent.styles';
-
-interface DefaultComponentProps {
-  children?: ReactNode;
-}
 
 const DefaultComponent = () => {
   return (
@@ -31,18 +26,6 @@ const DefaultComponent = () => {
       </S.Header>
     </S.Container>
   );
-};
-
-export const DefaultSection = ({ children }: DefaultComponentProps) => {
-  return <S.Section>{children}</S.Section>;
-};
-
-export const DefaultTitle = ({ children }: DefaultComponentProps) => {
-  return <S.Title>{children}</S.Title>;
-};
-
-export const DefaultButtonContainer = ({ children }: DefaultComponentProps) => {
-  return <S.ButtonContainer>{children}</S.ButtonContainer>;
 };
 
 export default DefaultComponent;
