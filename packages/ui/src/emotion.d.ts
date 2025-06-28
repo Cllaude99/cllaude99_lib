@@ -1,7 +1,5 @@
 import '@emotion/react';
-import { palette } from './design-system/palette';
-import { typography } from './design-system/typography';
-import { breakpoints } from './design-system/breakpoints';
+import { palette, typography, breakpoints } from './design-system';
 
 declare module '@emotion/react' {
   export interface Theme {

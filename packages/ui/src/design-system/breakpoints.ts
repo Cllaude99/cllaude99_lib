@@ -7,5 +7,3 @@ export const mq = {
   tablet: `@media (min-width: ${breakpoints.tablet})`,
   desktop: `@media (min-width: ${breakpoints.desktop})`,
 } as const;
-
-export default breakpoints;
